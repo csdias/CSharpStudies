@@ -90,3 +90,8 @@
 /Users/csdias/Projetos/CSharp/Generico/bin/Debug/netcoreapp3.0/zh-Hant/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 /Users/csdias/Projetos/CSharp/Generico/bin/Debug/netcoreapp3.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
 /Users/csdias/Projetos/CSharp/Generico/obj/Debug/netcoreapp3.0/Generico.csproj.CopyComplete
+C:\Projetos\CSharp\CSharpStudies\general\obj\Debug\netcoreapp3.0\Generico.csprojAssemblyReference.cache
+C:\Projetos\CSharp\CSharpStudies\general\obj\Debug\netcoreapp3.0\Generico.AssemblyInfoInputs.cache
+C:\Projetos\CSharp\CSharpStudies\general\obj\Debug\netcoreapp3.0\Generico.AssemblyInfo.cs
+C:\Projetos\CSharp\CSharpStudies\general\obj\Debug\netcoreapp3.0\Generico.dll
+C:\Projetos\CSharp\CSharpStudies\general\obj\Debug\netcoreapp3.0\Generico.pdb
