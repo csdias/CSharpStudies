@@ -1,0 +1,11 @@
+C:\Projetos\CSharp\CSharpStudies\general\arraylist\bin\Debug\netcoreapp3.0\ArrayList.exe
+C:\Projetos\CSharp\CSharpStudies\general\arraylist\bin\Debug\netcoreapp3.0\ArrayList.deps.json
+C:\Projetos\CSharp\CSharpStudies\general\arraylist\bin\Debug\netcoreapp3.0\ArrayList.runtimeconfig.json
+C:\Projetos\CSharp\CSharpStudies\general\arraylist\bin\Debug\netcoreapp3.0\ArrayList.runtimeconfig.dev.json
+C:\Projetos\CSharp\CSharpStudies\general\arraylist\bin\Debug\netcoreapp3.0\ArrayList.dll
+C:\Projetos\CSharp\CSharpStudies\general\arraylist\bin\Debug\netcoreapp3.0\ArrayList.pdb
+C:\Projetos\CSharp\CSharpStudies\general\arraylist\obj\Debug\netcoreapp3.0\ArrayList.csprojAssemblyReference.cache
+C:\Projetos\CSharp\CSharpStudies\general\arraylist\obj\Debug\netcoreapp3.0\ArrayList.AssemblyInfoInputs.cache
+C:\Projetos\CSharp\CSharpStudies\general\arraylist\obj\Debug\netcoreapp3.0\ArrayList.AssemblyInfo.cs
+C:\Projetos\CSharp\CSharpStudies\general\arraylist\obj\Debug\netcoreapp3.0\ArrayList.dll
+C:\Projetos\CSharp\CSharpStudies\general\arraylist\obj\Debug\netcoreapp3.0\ArrayList.pdb
