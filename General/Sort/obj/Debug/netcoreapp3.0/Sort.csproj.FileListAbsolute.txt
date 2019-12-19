@@ -1,0 +1,11 @@
+/Users/csdias/Projetos/CSharp/Generico/Sort/bin/Debug/netcoreapp3.0/Sort
+/Users/csdias/Projetos/CSharp/Generico/Sort/bin/Debug/netcoreapp3.0/Sort.deps.json
+/Users/csdias/Projetos/CSharp/Generico/Sort/bin/Debug/netcoreapp3.0/Sort.runtimeconfig.json
+/Users/csdias/Projetos/CSharp/Generico/Sort/bin/Debug/netcoreapp3.0/Sort.runtimeconfig.dev.json
+/Users/csdias/Projetos/CSharp/Generico/Sort/bin/Debug/netcoreapp3.0/Sort.dll
+/Users/csdias/Projetos/CSharp/Generico/Sort/bin/Debug/netcoreapp3.0/Sort.pdb
+/Users/csdias/Projetos/CSharp/Generico/Sort/obj/Debug/netcoreapp3.0/Sort.csprojAssemblyReference.cache
+/Users/csdias/Projetos/CSharp/Generico/Sort/obj/Debug/netcoreapp3.0/Sort.AssemblyInfoInputs.cache
+/Users/csdias/Projetos/CSharp/Generico/Sort/obj/Debug/netcoreapp3.0/Sort.AssemblyInfo.cs
+/Users/csdias/Projetos/CSharp/Generico/Sort/obj/Debug/netcoreapp3.0/Sort.dll
+/Users/csdias/Projetos/CSharp/Generico/Sort/obj/Debug/netcoreapp3.0/Sort.pdb

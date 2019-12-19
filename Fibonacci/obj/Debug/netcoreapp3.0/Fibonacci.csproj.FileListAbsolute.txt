@@ -1,0 +1,11 @@
+/Users/csdias/Projetos/CSharp/Fibonacci/bin/Debug/netcoreapp3.0/Fibonacci
+/Users/csdias/Projetos/CSharp/Fibonacci/bin/Debug/netcoreapp3.0/Fibonacci.deps.json
+/Users/csdias/Projetos/CSharp/Fibonacci/bin/Debug/netcoreapp3.0/Fibonacci.runtimeconfig.json
+/Users/csdias/Projetos/CSharp/Fibonacci/bin/Debug/netcoreapp3.0/Fibonacci.runtimeconfig.dev.json
+/Users/csdias/Projetos/CSharp/Fibonacci/bin/Debug/netcoreapp3.0/Fibonacci.dll
+/Users/csdias/Projetos/CSharp/Fibonacci/bin/Debug/netcoreapp3.0/Fibonacci.pdb
+/Users/csdias/Projetos/CSharp/Fibonacci/obj/Debug/netcoreapp3.0/Fibonacci.csprojAssemblyReference.cache
+/Users/csdias/Projetos/CSharp/Fibonacci/obj/Debug/netcoreapp3.0/Fibonacci.AssemblyInfoInputs.cache
+/Users/csdias/Projetos/CSharp/Fibonacci/obj/Debug/netcoreapp3.0/Fibonacci.AssemblyInfo.cs
+/Users/csdias/Projetos/CSharp/Fibonacci/obj/Debug/netcoreapp3.0/Fibonacci.dll
+/Users/csdias/Projetos/CSharp/Fibonacci/obj/Debug/netcoreapp3.0/Fibonacci.pdb
