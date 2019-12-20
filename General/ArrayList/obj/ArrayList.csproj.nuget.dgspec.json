@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projetos\\CSharp\\CSharpStudies\\General\\ArrayList\\ArrayList.csproj": {}
+    "C:\\Projetos\\CSharp\\CSharpStudies\\general\\ArrayList\\ArrayList.csproj": {}
   },
   "projects": {
-    "C:\\Projetos\\CSharp\\CSharpStudies\\General\\ArrayList\\ArrayList.csproj": {
+    "C:\\Projetos\\CSharp\\CSharpStudies\\general\\ArrayList\\ArrayList.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\CSharp\\CSharpStudies\\General\\ArrayList\\ArrayList.csproj",
+        "projectUniqueName": "C:\\Projetos\\CSharp\\CSharpStudies\\general\\ArrayList\\ArrayList.csproj",
         "projectName": "ArrayList",
-        "projectPath": "C:\\Projetos\\CSharp\\CSharpStudies\\General\\ArrayList\\ArrayList.csproj",
+        "projectPath": "C:\\Projetos\\CSharp\\CSharpStudies\\general\\ArrayList\\ArrayList.csproj",
         "packagesPath": "C:\\Users\\Carlos\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\CSharp\\CSharpStudies\\General\\ArrayList\\obj\\",
+        "outputPath": "C:\\Projetos\\CSharp\\CSharpStudies\\general\\ArrayList\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Carlos\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -39,21 +39,19 @@ namespace ArrayListTest
             Assert.AreEqual(8, list.Length);
         }
 
+        [Test]
         public void ExpandedToEightAfterInsertion()
         {
-            //Assert.Pass();
-
             ArrayList<int> list = new ArrayList<int>();
             list.Add(4);
             list.Add(5);
             list.Add(6);
             list.Add(7);
+            list.Add(8);            
 
-            //Assert.AreEqual(200, list.Length);
-            list.Insert(2, 200);
-
-            //Assert.AreEqual(8, list.Length);
-            //Assert.AreEqual(6, list[2]);
+            list.Insert(200, 2);
+            
+            Assert.AreEqual(200, list[2]);
             Assert.AreEqual(6, list[3]);
         }
 

@@ -12,6 +12,8 @@ namespace ArrayList
             list.Add(4);
             list.Add(5);
             list.Add(6);
+            list.Add(7);
+            list.Add(8);            
             list.Insert(200, 2);
         }
     }
@@ -42,7 +44,7 @@ namespace ArrayList
             if (lastItemIndex == internalStorage.Length - 1)
                 ExpandStorage();
 
-            int segment = lastItemIndex - index;
+            int segment = lastItemIndex - index + 1;
 
             Array.Copy(internalStorage, index, internalStorage, index + 1, segment);
 
