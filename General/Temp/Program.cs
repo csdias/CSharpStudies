@@ -3,70 +3,6 @@ using System.Collections.Generic;
 
 namespace Temp
 {
-
-    public class ArrayList<T> {
-        private T[] internalStorage;
-        private int lastItemIndex = - 1;
-
-        public ArrayList()
-        {
-            internalStorage = new T[4];
-        }
-
-        public T this[int index] { 
-            get{
-                return internalStorage[index];
-            } 
-            set{ internalStorage[index] = value; 
-            }
-        }
-
-        public void Add(T item){
-
-            //verify if there is room
-            if (internalStorage.Length - 1 == lastItemIndex)
-                ExpandStorage();
-
-            internalStorage[lastItemIndex + 1] = item;
-            lastItemIndex++;
-
-        }
-
-        private void ExpandStorage(){
-            //Create a new array with double length
-            T[] newStorage = new T[internalStorage.Length * 2];
-            //Copy the content of the old array to the new one
-            Array.Copy(internalStorage, newStorage, internalStorage.Length-1);
-            //Make the new array the current array
-            internalStorage = newStorage;
-
-        }
-
-        public void Insert(T item, int index){
-
-            Validate(index);
-
-            //Calculate the segment
-            int iniNewSeg = internalStorage.Length - index + 1;
-
-            //Move the segment ahead
-            Array.Copy(internalStorage, index, internalStorage, index + 1, iniNewSeg);
-
-            internalStorage[index] = item;
-            lastItemIndex++;
-
-        }
-
-        private void Validate(int index){
-
-            if (index < 0 || index > lastItemIndex)
-                throw new ArgumentOutOfRangeException();
-        }
-
-
-    }
-
-
     class Program
     {
         static void Main(string[] args)
@@ -91,8 +27,8 @@ namespace Temp
 
             int[] sorted = CocktailSort(seq);
 
-            int s = BinarySearch(sorted, 9);
-
+            //int s = BinarySearch(sorted, 9);
+            int ss = NovoBinarySearch(sorted);
 
             //Console.WriteLine(BinarySearch(sorted, int x))
 
@@ -106,32 +42,53 @@ namespace Temp
             //}
         }
 
+        static int NovoBinarySearch(int[] toBeSearched, int item)
+        {
+            int min = 0;
+            int max = toBeSearched.Length -1;
+            while(min <= max){
+                int mid = (max + min)/2;
+
+                if (item > toBeSearched[mid]){
+                    min = mid +1;
+                }
+                else if (item < toBeSearched[mid]){
+                    max = mid -1;
+                }
+                else if(item == toBeSearched[mid])
+                {
+                    return ++mid;
+                }
+            }
+
+            return -1;
+
+
+        }
+
         static int BinarySearch(int[] arr, int x){
             //int[] seq  = { 800, 11, 50, 771, 649, 770, 240, 9 };
             //int[] seq  = { 9, 11, 50, 240, 649, 770, 771, 800};
 
+            int min = 0;
+            int max = arr.Length - 1;
+            while(min <= max){
+                int mid = (min + max)/2;
 
+                if (x == arr[mid]){
+                    return ++mid;
 
-int min = 0;
-int max = arr.Length - 1;
-while(min <= max){
-    int mid = (min + max)/2;
+                }
+                else if(x > arr[mid]){
+                    min = mid + 1;
+                }
+                else if(x < arr[mid]){
+                    max = mid - 1;
+                }
 
-    if (x == arr[mid]){
-        return ++mid;
+            }
 
-    }
-    else if(x > arr[mid]){
-        min = mid + 1;
-    }
-    else if(x < arr[mid]){
-        max = mid - 1;
-    }
-
-}
-    return -1;
-
-
+            return -1;
 
             // int min = 0;
             // int max = arr.Length - 1;
