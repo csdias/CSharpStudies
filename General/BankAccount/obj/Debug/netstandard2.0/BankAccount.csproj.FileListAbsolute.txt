@@ -1,8 +1,0 @@
-/Users/csdias/Projetos/CSharp/Generico/BankAccount/bin/Debug/netstandard2.0/BankAccount.deps.json
-/Users/csdias/Projetos/CSharp/Generico/BankAccount/bin/Debug/netstandard2.0/BankAccount.dll
-/Users/csdias/Projetos/CSharp/Generico/BankAccount/bin/Debug/netstandard2.0/BankAccount.pdb
-/Users/csdias/Projetos/CSharp/Generico/BankAccount/obj/Debug/netstandard2.0/BankAccount.csprojAssemblyReference.cache
-/Users/csdias/Projetos/CSharp/Generico/BankAccount/obj/Debug/netstandard2.0/BankAccount.AssemblyInfoInputs.cache
-/Users/csdias/Projetos/CSharp/Generico/BankAccount/obj/Debug/netstandard2.0/BankAccount.AssemblyInfo.cs
-/Users/csdias/Projetos/CSharp/Generico/BankAccount/obj/Debug/netstandard2.0/BankAccount.dll
-/Users/csdias/Projetos/CSharp/Generico/BankAccount/obj/Debug/netstandard2.0/BankAccount.pdb
