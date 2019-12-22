@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Temp
 {
@@ -22,13 +23,18 @@ namespace Temp
 
             int[] seq  = { 800, 11, 50, 771, 649, 770, 240, 9 };
             int[] seq2 = new int[10] {2, 0, 1, 5, 7, 4, 9, 3, 8, 6};
+            int[] toBeMerged = {6, 42, 10, 86, 4, 12, 30, 23};
+
+            List<int> mergedArray = MergeSort(toBeMerged.ToList<int>());
 
             //int[] sorted = BubbleSort(seq);
 
-            int[] sorted = CocktailSort(seq);
+            //int[] sorted = CocktailSort(seq);
 
             //int s = BinarySearch(sorted, 9);
-            int ss = NovoBinarySearch(sorted);
+            //int ss = NovoBinarySearch(sorted, 50);
+            //int sss. = RecursiveBinarySearch(sorted, 50);
+
 
             //Console.WriteLine(BinarySearch(sorted, int x))
 
@@ -40,6 +46,94 @@ namespace Temp
             //foreach(var i in Fibonacci(8)){
                 //Console.WriteLine(i);
             //}
+        }
+
+
+        //static int RecursiveBinarySearch(this int[] arr, int item){
+
+            //return RecursiveBinarySearch(arr, 0, arr.Length, item);
+
+        //}
+
+
+        private static List<int> MergeSort(List<int> unsorted)
+        {
+            if (unsorted.Count <= 1)
+                return unsorted;
+
+            List<int> left = new List<int>();
+            List<int> right = new List<int>();
+
+            int middle = unsorted.Count / 2;
+            for (int i = 0; i < middle;i++)  //Dividing the unsorted list
+            {
+                left.Add(unsorted[i]);
+            }
+            for (int i = middle; i < unsorted.Count; i++)
+            {
+                right.Add(unsorted[i]);
+            }
+
+            left = MergeSort(left);
+            right = MergeSort(right);
+            return Merge(left, right);
+        }
+
+        private static List<int> Merge(List<int> left, List<int> right)
+        {
+            List<int> result = new List<int>();
+
+            while(left.Count > 0 || right.Count>0)
+            {
+                if (left.Count > 0 && right.Count > 0)
+                {
+                    if (left.First() <= right.First())  //Comparing First two elements to see which is smaller
+                    {
+                        result.Add(left.First());
+                        left.Remove(left.First());      //Rest of the list minus the first element
+                    }
+                    else
+                    {
+                        result.Add(right.First());
+                        right.Remove(right.First());
+                    }
+                }
+                else if(left.Count>0)
+                {
+                    result.Add(left.First());
+                    left.Remove(left.First());
+                }
+                else if (right.Count > 0)
+                {
+                    result.Add(right.First());
+
+                    right.Remove(right.First());    
+                }    
+            }
+            return result;
+        }
+
+        
+    
+        static int RecursiveBinarySearch(int[] arr, int min, int max, int item){
+
+            if (min < max)
+                return -1 ;
+
+            int mid = (min + max)/2;
+
+            if (item == arr[mid])
+                return mid++;
+            else if(item > arr[mid]){
+                min = mid  + 1;
+            }
+            else if (item < arr[mid]){
+                max = mid - 1;
+            }
+
+            return RecursiveBinarySearch(arr, min, max, item);
+
+
         }
 
         static int NovoBinarySearch(int[] toBeSearched, int item)
@@ -124,7 +218,6 @@ namespace Temp
 
             return arr;
         }
-
 
         static int[] MySort(int[] seq){
 
