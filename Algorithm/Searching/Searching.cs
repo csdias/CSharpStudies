@@ -133,11 +133,10 @@ namespace Algorithm
 
         static int[] CocktailSort(int[] arr){
 
+            int start = 0;
             int end = arr.Length - 1;
-
             bool swap = true;
 
-            int start = 0;
             while(swap){
                 for(var j = start; j < end; j++){
 

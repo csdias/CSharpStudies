@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Algorithm
 {
-    public static class Sorting
+    public static partial class Sorting
     {
         public static List<int> MergeSort(List<int> unsorted)
         {
