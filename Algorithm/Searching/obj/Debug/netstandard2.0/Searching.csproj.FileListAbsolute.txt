@@ -1,8 +1,0 @@
-/Users/csdias/Projetos/CSharpStudies/Algorithm/Searching/obj/Debug/netstandard2.0/Searching.csprojAssemblyReference.cache
-/Users/csdias/Projetos/CSharpStudies/Algorithm/Searching/obj/Debug/netstandard2.0/Searching.AssemblyInfoInputs.cache
-/Users/csdias/Projetos/CSharpStudies/Algorithm/Searching/obj/Debug/netstandard2.0/Searching.AssemblyInfo.cs
-/Users/csdias/Projetos/CSharpStudies/Algorithm/Searching/bin/Debug/netstandard2.0/Searching.deps.json
-/Users/csdias/Projetos/CSharpStudies/Algorithm/Searching/bin/Debug/netstandard2.0/Searching.dll
-/Users/csdias/Projetos/CSharpStudies/Algorithm/Searching/bin/Debug/netstandard2.0/Searching.pdb
-/Users/csdias/Projetos/CSharpStudies/Algorithm/Searching/obj/Debug/netstandard2.0/Searching.dll
-/Users/csdias/Projetos/CSharpStudies/Algorithm/Searching/obj/Debug/netstandard2.0/Searching.pdb
