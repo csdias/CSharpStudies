@@ -6,21 +6,18 @@ namespace Algorithm
 {
     public static partial class Sorting
     {
-
-            //In the quick sort, the mechanism is to choose a pivot
-            //and put all the lowers items at the left and all the higher items at the right
-            //Another trick is after comparing the elements and deciding to swap, the process of swaping is
-            //To swap with a lower item: Put the element immediatelly before the pivot in a temporary space,
-            //place the pivot in the house imediatelly before the pivot.
-            //place the higher item in the place of the pivot
-            //put the element in the temporary space in the old place of the higer element
-            //break the array in two and keep doing it recursively until the array contains just one element
+        //In the quick sort, the mechanism is to choose a pivot
+        //and put all the lowers items at the left and all the higher items at the right
+        //Another trick is after comparing the elements and deciding to swap, the process of swaping is
+        //To swap with a lower item: Put the element immediatelly before the pivot in a temporary space,
+        //place the pivot in the house imediatelly before the pivot.
+        //place the higher item in the place of the pivot
+        //put the element in the temporary space in the old place of the higer element
+        //break the array in two and keep doing it recursively until the array contains just one element
         private static List<int> QuickSort(List<int> list){
 
             if (list.Count <= 1)
                 return list;
-
-            //Do the magic with the pivot
 
             int random = new Random().Next(list.Count);
 
