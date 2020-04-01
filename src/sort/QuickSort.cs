@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Algorithm
 {
-    public static partial class Sorting
+    public static partial class Sort
     {
         //In the quick sort, the mechanism is to choose a pivot
         //and put all the lowers items at the left and all the higher items at the right

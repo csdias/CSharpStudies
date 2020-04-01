@@ -2,7 +2,7 @@
 
 namespace ArrayList
 {
-    public class Program
+    public partial class ArrayList
     {
         static void Main(string[] args)
         {

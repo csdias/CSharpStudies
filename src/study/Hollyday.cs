@@ -4,10 +4,8 @@ using System.Linq;
 
 namespace Algorithm
 {
-
-    class Program
+    public static partial class Study
     {
-
         public static void solution(int Y, string A, string B, string W) {
             // write your code in C# 6.0 with .NET 4.5 (Mono)
 
@@ -84,17 +82,13 @@ namespace Algorithm
             return days; 
         }
 
-
         static void Main(string[] args)
         {
-
-
             int[] list = {1, 4, 6, 3 ,2};
 
             solution(2004, "March", "June", "Wednesday");
 
             return;
-
 
             string message = "The number to be parsed is: 123";
             string msg = "hello";
@@ -108,27 +102,6 @@ namespace Algorithm
             ReadOnlySpan<char> numSpan = msgSpan.Slice(message.IndexOf(':')+2);
             int.TryParse(numSpan, out int b);
             Console.WriteLine(b);
-
-            int[] unsortedI  = { 800, 11, 50, 771, 649, 770, 240, 9 };
-            int[] unsortedII = new int[10] {2, 0, 1, 5, 7, 4, 9, 3, 8, 6};
-            int[] unsortedIII = {6, 42, 10, 86, 4, 12, 30, 23};
-
-            List<int> sorted = Sorting.MergeSort(unsortedIII.ToList<int>());
-            
-            foreach(var i in sorted){
-                Console.WriteLine(i);
-            }
-
-            //int[] sorted = BubbleSort(seq);
-
-            //int[] sorted = CocktailSort(seq);
-
-            //int s = BinarySearch(sorted, 9);
-            //int ss = NovoBinarySearch(sorted, 50);
-            //int sss. = RecursiveBinarySearch(sorted, 50);
-
-            //Console.WriteLine(BinarySearch(sorted, int x))
-
 
         }
 
