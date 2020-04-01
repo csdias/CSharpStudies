@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Algorithm
+namespace study
 {
     public static partial class Study
     {
@@ -80,29 +80,6 @@ namespace Algorithm
             };
 
             return days; 
-        }
-
-        static void Main(string[] args)
-        {
-            int[] list = {1, 4, 6, 3 ,2};
-
-            solution(2004, "March", "June", "Wednesday");
-
-            return;
-
-            string message = "The number to be parsed is: 123";
-            string msg = "hello";
-
-            char[] charMsg = msg.ToCharArray(); 
-
-            charMsg[0] = 'Z';
-
-            //this does not create a new string
-            ReadOnlySpan<char> msgSpan = message;
-            ReadOnlySpan<char> numSpan = msgSpan.Slice(message.IndexOf(':')+2);
-            int.TryParse(numSpan, out int b);
-            Console.WriteLine(b);
-
         }
 
     }

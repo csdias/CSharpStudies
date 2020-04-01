@@ -2,16 +2,29 @@
 
 namespace study
 {
-    public class Study
+    public static partial class Study
     {
-        // static void Main(string[] args)
-        // {
-        //     int[] arr = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21};
-        //     //int[] arr = {100,200,1100,1200,2000,2100};
 
-        //     Console.Write($" Found Nemo! {findNemo(arr, -2)}");
+        public static int find(int[] arr, int val){
+            int b = 0;
+            int e = arr.Length;
+            int m;
 
-        // }
+            while(b <= e){
+                m = ((b + e)/2);
+                Console.WriteLine($"b {b} e {e} m {m} val {arr[m]}");
+                if (val > arr[m]){
+                    m++; b = m;
+                }
+                else if(val < arr[m]){
+                    m--; e = m;
+                }
+                else if(val == arr[m])
+                    return ++m;
+            }
+
+            return -1;
+        }
 
         public static bool findNemo(int[] arr, int v){
             bool foundNemo = false;
@@ -40,10 +53,6 @@ namespace study
 
             return foundNemo;
         }
-    
-    
-    
-    
     
     }
 }
