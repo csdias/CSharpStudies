@@ -4,7 +4,6 @@ namespace study
 {
     public static partial class Study
     {
-
         public static int find(int[] arr, int val){
             int b = 0;
             int e = arr.Length;
