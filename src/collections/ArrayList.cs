@@ -1,21 +1,9 @@
 ﻿using System;
 
-namespace ArrayList
+namespace Collections
 {
     public partial class ArrayList
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-
-            ArrayList<int> list = new ArrayList<int>();
-            list.Add(4);
-            list.Add(5);
-            list.Add(6);
-            list.Add(7);
-            list.Add(8);            
-            list.Insert(200, 2);
-        }
     }
 
     public class ArrayList<T>{
