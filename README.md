@@ -5,6 +5,6 @@ to save ctrl + d
 
 dotnet new nunit
 
-dotnet add reference ../src/arraylist/arraylist.csproj (from __tests__)
+dotnet add reference ../src/collections/collections.csproj (from __tests__)
 
 
