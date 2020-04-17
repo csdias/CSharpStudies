@@ -5,9 +5,9 @@ namespace Algorithm
 {
     public partial class Search
     {
-        public static void Main(string[] args){
+        //public static void Main(string[] args){
 
-        }
+        //}
 
         public static int[] FindSumInPair(int[] arr, int val){
             int b = 0;

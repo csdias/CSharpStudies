@@ -12,7 +12,7 @@
              // If you have changed target frameworks, make sure to update the program path.
              // "program": "${workspaceFolder}/src/sort/bin/Debug/netcoreapp3.0/sort.dll",
              //"program": "${workspaceFolder}/src/collection/bin/Debug/netcoreapp3.0/arraylist.dll",
-             "program": "${workspaceFolder}/src/collections/bin/Debug/netcoreapp3.0/collections.dll",
+             "program": "${workspaceFolder}/src/search/bin/Debug/netcoreapp3.0/search.dll",
              "args": [],
              "cwd": "${workspaceFolder}",
              // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console

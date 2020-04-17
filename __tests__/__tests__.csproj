@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\arraylist\arraylist.csproj" />
+    <ProjectReference Include="..\src\collections\collections.csproj" />
   </ItemGroup>
 
 </Project>

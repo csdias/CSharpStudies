@@ -1,6 +1,6 @@
 using NUnit.Framework;
 using System;
-using ArrayList;
+using Collections;
 
 namespace __tests__
 {

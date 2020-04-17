@@ -7,28 +7,15 @@ namespace Algorithm
     {
         public static void Main(string[] args){
 
+            int[] res = BinarySearch(new int[]{1,2,3});
+
         }
 
-        static int BinarySearch(int[] toBeSearched, int item)
-        {
-            int min = 0;
-            int max = toBeSearched.Length -1;
-            while(min <= max){
-                int mid = (max + min)/2;
+        public static int[] BinarySearch(int[] input){
 
-                if (item > toBeSearched[mid]){
-                    min = mid +1;
-                }
-                else if (item < toBeSearched[mid]){
-                    max = mid -1;
-                }
-                else if(item == toBeSearched[mid])
-                {
-                    return ++mid;
-                }
-            }
 
-            return -1;
+            return new int[]{1,2};
         }
+
     }
 }
