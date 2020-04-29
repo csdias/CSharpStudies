@@ -9,8 +9,8 @@ namespace study
         {
             int[] arr = {1,2,3,4,5,6,7,8,9,11,12,13,14,15,16,21};
             //int[] arr = {100,200,1100,1200,2000,2100};
-            int[] result = Study.findPair(arr, 31);
-            Console.Write($" Found Nemo! {result[0]}  {result[1]} ");
+            int result = Study.find(arr, 31);
+            //Console.Write($" Found Nemo! {result[0]}  {result[1]} ");
         }
 
 

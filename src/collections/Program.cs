@@ -8,7 +8,10 @@ namespace Collections
             LinkedList linkedList = new LinkedList();
             Node node = linkedList.Add(5);
             node = linkedList.Add(6);
+            linkedList.Add(9);
             Console.WriteLine($"{linkedList}");
+
+            linkedList.Reverse();
         }
 
         static void Main_ArrayList(string[] args)

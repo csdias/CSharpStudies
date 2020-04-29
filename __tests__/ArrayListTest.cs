@@ -4,7 +4,7 @@ using Collections;
 
 namespace __tests__
 {
-    public class Tests
+    public class ArrayListTests
     {
 
         [SetUp]

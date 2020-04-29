@@ -1,11 +1,11 @@
 ﻿
 namespace Algorithm
 {
-    public partial class Algorithm
+    public partial class AlmostPalindrome
     {      
         public static void Main(string[] args){
             //Tests
-            var res = AlmostPalindrome("abccba");
+            var res = IsItAlmostPalindrome("abccba");
             //var res = AlmostPalindrome("abccfa");
             //var res = AlmostPalindrome("abccfg");
             //var res = AlmostPalindrome("abba");
@@ -14,7 +14,7 @@ namespace Algorithm
         }
 
 
-        static bool AlmostPalindrome(string candidate)
+        static bool IsItAlmostPalindrome(string candidate)
         {
             int min = 0;
             int max = candidate.Length;
