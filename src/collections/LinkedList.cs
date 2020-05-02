@@ -24,44 +24,40 @@ namespace Collections
             }
         }
     
-        public LinkedList Reverse() {
+        public LinkedList ReverseIteratively() {
             Node current = this.Head;
-            Node next = null; 
+            Node next = null;
             Node previous = null;
-
-            while (current != null){
-
+            while(current != null){
                 next = current.Next;
-
                 current.Next = previous;
-
                 previous = current;
-                
                 current = next;
             }
-
             this.Head = previous;
+            return this;
+        }
+
+        public LinkedList ReverseRecursively() {
+            Node h = ReverseRecursively_aux(this.Head);
+
+            this.Head = h;
             
             return this;
         }
-        public LinkedList OldReverse() {
-            Node current = this.Head;
-            Node newTail = this.Head;
-            Node previous; 
-            Node next = this.Head.Next;
-            while (next != null){
-                previous = current;
-                
-                next = new Node(current.Value);
-                next.Next = current.Next;
 
-                current.Next.Next = previous;
+        private Node ReverseRecursively_aux(Node node){
+            if(node == null || node.Next == null){
+                return node;
             }
-            newTail.Next = null;
 
-            return this;
+            Node reversedListHead = null;
+            reversedListHead = ReverseRecursively_aux(node.Next);            
+            node.Next.Next = node;
+            node.Next = null;
+
+            return reversedListHead;
         }
-    
     }
 
     public class Node {
@@ -72,6 +68,5 @@ namespace Collections
         public int Value { get; set; }
         public Node Next { get; set; }
     }
-
 
 }

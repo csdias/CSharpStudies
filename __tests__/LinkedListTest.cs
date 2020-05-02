@@ -22,20 +22,32 @@ namespace __tests__
                 linkedList.Add(j);
             }
 
-            linkedList.Reverse();
+            linkedList.ReverseIteratively();
 
             Node current = linkedList.Head;
 
-            Console.WriteLine(current.Value);
-
-            while(current.Next != null){
-                Assert.AreEqual(3, current.Value);
-                current = current.Next;
-            }
+            Assert.AreEqual(3, current.Value);
         }
 
 
         private void ThrowNullReferenceException_prep(){
+
+            LinkedList linkedList = new LinkedList();
+            for(int j = 1; j < 4; j++){
+                linkedList.Add(j);
+            }
+
+            linkedList.ReverseIteratively();
+
+            Node current = linkedList.Head;
+
+            while(current != null){
+                current = current.Next;
+            }
+
+            current = current.Next;
+
+            Assert.AreEqual(3, current.Next);
          
         }
 
@@ -43,7 +55,7 @@ namespace __tests__
         public void ThrowNullReferenceException()
         {
             var ex = Assert.Throws<NullReferenceException>(() => { ThrowNullReferenceException_prep(); });
-            Assert.That(ex.Message, Is.EqualTo("Null reference Exception."));
+            Assert.That(ex.Message, Is.EqualTo("Object reference not set to an instance of an object."));
         }        
 
     }
