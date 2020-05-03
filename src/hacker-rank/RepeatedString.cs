@@ -5,12 +5,12 @@ namespace hackerRank
     public static class RepeatedString
     {
 
-        static void Main(string[] args)
-        {
-            var result = repeatedString("aba", 10);
+        //static void Main(string[] args)
+        //{
+            //var result = repeatedString("aba", 10);
 
-            Console.WriteLine(result);
-        }
+            //Console.WriteLine(result);
+        //}
 
         // Complete the repeatedString function below.
         static long repeatedString(string s, long n)
