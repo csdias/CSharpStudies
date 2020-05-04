@@ -13,7 +13,7 @@ namespace __tests__
         }
 
         [Test]
-        public void Reverse()
+        public void ReverseIteratively()
         {
             //Assert.Pass();
 
@@ -29,6 +29,22 @@ namespace __tests__
             Assert.AreEqual(3, current.Value);
         }
 
+        [Test]
+        public void ReverseReursively()
+        {
+            //Assert.Pass();
+
+            LinkedList linkedList = new LinkedList();
+            for(int j = 1; j < 4; j++){
+                linkedList.Add(j);
+            }
+
+            linkedList.ReverseRecursively();
+
+            Node current = linkedList.Head;
+
+            Assert.AreEqual(3, current.Value);
+        }
 
         private void ThrowNullReferenceException_prep(){
 

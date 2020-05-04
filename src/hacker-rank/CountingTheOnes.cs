@@ -42,10 +42,10 @@ namespace Algorithm
     public static class CountingTheOnes
     {
 
-        static void Main(string[] args)
-        {
-            int n = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(n.ToBinary().ToString().CountSequenceOfOnes());
-        }
+        // static void Main(string[] args)
+        // {
+        //     int n = Convert.ToInt32(Console.ReadLine());
+        //     Console.WriteLine(n.ToBinary().ToString().CountSequenceOfOnes());
+        // }
     }
 }
