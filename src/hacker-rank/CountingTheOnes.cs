@@ -1,7 +1,7 @@
 using System;
 using System.Text;
 
-namespace Algorithm
+namespace HackerRank
 {
     public static class MyExtensions
     {

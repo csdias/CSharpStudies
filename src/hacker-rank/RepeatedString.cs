@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace hackerRank
+namespace HackerRank
 {
     public static class RepeatedString
     {

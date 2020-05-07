@@ -13,6 +13,7 @@
              // "program": "${workspaceFolder}/src/sort/bin/Debug/netcoreapp3.0/sort.dll",
              "program": "${workspaceFolder}/src/collections/bin/Debug/netcoreapp3.0/collections.dll",
              //"program": "${workspaceFolder}/src/search/bin/Debug/netcoreapp3.0/search.dll",
+             //"program": "${workspaceFolder}/src/hacker-hank/bin/Debug/netcoreapp3.0/HackerRank.dll",
              "args": [],
              "cwd": "${workspaceFolder}",
              // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console

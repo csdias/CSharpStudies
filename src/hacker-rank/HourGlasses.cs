@@ -1,26 +1,26 @@
 using System;
 
-namespace hackerRank
+namespace HackerRank
 {
     public static class HourGlasses
     {
 
-        static void Main(string[] args)
-        {
-            int[][] arr = new int[6][];
+        // static void Main(string[] args)
+        // {
+        //     int[][] arr = new int[6][];
 
-            //arr[i] = Array.ConvertAll(Console.ReadLine().Split(' '), arrTemp => Convert.ToInt32(arrTemp));
-            arr[0] = new int[6] { -1, -1, 0, -9, -2, -2 };
-            arr[1] = new int[6] { -2, -1, -6, -8, -2, -5 };
-            arr[2] = new int[6] { -1, -1, -1, -2, -3, -4 };
-            arr[3] = new int[6] { -1, -9, -2, -4, -4, -5 };
-            arr[4] = new int[6] { -7, -3, -3, -2, -9, -9 };
-            arr[5] = new int[6] { -1, -3, -1, -2, -4, -5 };
+        //     //arr[i] = Array.ConvertAll(Console.ReadLine().Split(' '), arrTemp => Convert.ToInt32(arrTemp));
+        //     arr[0] = new int[6] { -1, -1, 0, -9, -2, -2 };
+        //     arr[1] = new int[6] { -2, -1, -6, -8, -2, -5 };
+        //     arr[2] = new int[6] { -1, -1, -1, -2, -3, -4 };
+        //     arr[3] = new int[6] { -1, -9, -2, -4, -4, -5 };
+        //     arr[4] = new int[6] { -7, -3, -3, -2, -9, -9 };
+        //     arr[5] = new int[6] { -1, -3, -1, -2, -4, -5 };
 
-            int ret = process(arr);
+        //     int ret = process(arr);
 
-            Console.WriteLine($"{ret}");
-        }
+        //     Console.WriteLine($"{ret}");
+        // }
 
         public static int process(int[][] arr)
         {

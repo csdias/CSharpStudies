@@ -1,16 +1,16 @@
 ﻿
-namespace Algorithm
+namespace HackerRank
 {
     public partial class AlmostPalindrome
     {      
         //public static void Main(string[] args){
-            //Tests
+            
             //var res = IsItAlmostPalindrome("abccba");
-            //var res = AlmostPalindrome("abccfa");
-            //var res = AlmostPalindrome("abccfg");
-            //var res = AlmostPalindrome("abba");
-            //var res = AlmostPalindrome("abfa");
-            //var res = AlmostPalindrome("abcd");
+            // var res = AlmostPalindrome("abccfa");
+            // var res = AlmostPalindrome("abccfg");
+            // var res = AlmostPalindrome("abba");
+            // var res = AlmostPalindrome("abfa");
+            // var res = AlmostPalindrome("abcd");
         //}
 
 
