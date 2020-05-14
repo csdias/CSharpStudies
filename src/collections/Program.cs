@@ -4,7 +4,13 @@ namespace Collections
 {
     public partial class Program
     {
-        static void Main(string[] args){
+
+        static void Main(){
+            EmptyBST<int> bst = new EmptyBST<int>();
+            var bt = bst.add(2);
+        }
+
+        static void Main_LinkedList(string[] args){
             LinkedList linkedList = new LinkedList();
             linkedList.computeDifference();
             // Node node = linkedList.Add(3);

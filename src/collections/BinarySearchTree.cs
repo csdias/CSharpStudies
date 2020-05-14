@@ -6,7 +6,7 @@ namespace Collections
     {
         bool isEmpty();
         int cardinality();
-        bool member(T elem);
+        bool find(T elem);
         ITree<T> add(T elem); 
     }
 
@@ -21,7 +21,7 @@ namespace Collections
         public int cardinality(){
             return 0;
         }
-        public bool member(T elem){
+        public bool find(T elem){
             return false;
         }
 
@@ -56,13 +56,13 @@ namespace Collections
             return 1 + left.cardinality() + right.cardinality();
         }
 
-        public bool member(T elem){
+        public bool find(T elem){
             if (elem.CompareTo(data) == 0)
                 return true;
             else if(elem.CompareTo(data) < 0)
-                return left.member(data);
+                return left.find(data);
             else
-                return right.member(data);
+                return right.find(data);
         }
 
         public ITree<T> add(T elem){
