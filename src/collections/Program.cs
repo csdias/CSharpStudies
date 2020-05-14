@@ -6,14 +6,15 @@ namespace Collections
     {
         static void Main(string[] args){
             LinkedList linkedList = new LinkedList();
-            Node node = linkedList.Add(3);
-            linkedList.Add(5);
-            node = linkedList.Add(6);
-            linkedList.Add(9);
-            Console.WriteLine($"{linkedList}");
+            linkedList.computeDifference();
+            // Node node = linkedList.Add(3);
+            // linkedList.Add(5);
+            // node = linkedList.Add(6);
+            // linkedList.Add(9);
+            // Console.WriteLine($"{linkedList}");
 
-            //linkedList.ReverseIteratively();
-            linkedList.ReverseRecursively();
+            // //linkedList.ReverseIteratively();
+            // linkedList.ReverseRecursively();
         }
 
         static void Main_ArrayList(string[] args)
