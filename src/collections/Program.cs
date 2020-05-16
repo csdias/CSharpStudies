@@ -7,9 +7,15 @@ namespace Collections
 
         static void Main(string[] args){
             Node root = null;
-            root = BinarySearchTree.insert(root, 1);
+            root = BinarySearchTree.insert(root, 3);
+            root = BinarySearchTree.insert(root, 5);
             root = BinarySearchTree.insert(root, 2);
+            root = BinarySearchTree.insert(root, 1);
+            root = BinarySearchTree.insert(root, 4);
+            root = BinarySearchTree.insert(root, 6);
             root = BinarySearchTree.insert(root, 7);
+
+            var count = BinarySearchTree.getHeight(root);
         }
 
         static void Main_LinkedList(string[] args){
