@@ -5,9 +5,11 @@ namespace Collections
     public partial class Program
     {
 
-        static void Main(){
-            EmptyBST<int> bst = new EmptyBST<int>();
-            var bt = bst.add(2);
+        static void Main(string[] args){
+            Node root = null;
+            root = BinarySearchTree.insert(root, 1);
+            root = BinarySearchTree.insert(root, 2);
+            root = BinarySearchTree.insert(root, 7);
         }
 
         static void Main_LinkedList(string[] args){
