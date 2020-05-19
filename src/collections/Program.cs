@@ -6,7 +6,7 @@ namespace Collections
     {
 
         static void Main(string[] args){
-            Node root = null;
+            BNode root = null;
             root = BinarySearchTree.insert(root, 3);
             root = BinarySearchTree.insert(root, 5);
             root = BinarySearchTree.insert(root, 2);
@@ -20,15 +20,14 @@ namespace Collections
 
         static void Main_LinkedList(string[] args){
             LinkedList linkedList = new LinkedList();
-            linkedList.computeDifference();
-            // Node node = linkedList.Add(3);
-            // linkedList.Add(5);
-            // node = linkedList.Add(6);
-            // linkedList.Add(9);
-            // Console.WriteLine($"{linkedList}");
+            Node node = linkedList.Add(3);
+            linkedList.Add(5);
+            node = linkedList.Add(6);
+            linkedList.Add(9);
+            Console.WriteLine($"{linkedList}");
 
-            // //linkedList.ReverseIteratively();
-            // linkedList.ReverseRecursively();
+            //linkedList.ReverseIteratively();
+            //linkedList.ReverseRecursively();
         }
 
         static void Main_ArrayList(string[] args)

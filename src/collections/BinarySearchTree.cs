@@ -2,10 +2,10 @@ using System;
 //using System.Collections.Generic;
 
 namespace Collections{
-    public class Node{
+    public class BNode{
         public int value { get; set;}
-        public Node left, right = null;
-        public Node(int val)
+        public BNode left, right = null;
+        public BNode(int val)
         {
             this.value = val;
         }
@@ -14,12 +14,12 @@ namespace Collections{
     public class BinarySearchTree{
         static int count = 0;
 
-        public static int getHeight(Node root){
+        public static int getHeight(BNode root){
             var count = countNode(root);
             return count.value-1;
         }
 
-        private static Node countNode(Node node){
+        private static BNode countNode(BNode node){
 
             if(node.left == null && node.right == null)
             {
@@ -27,13 +27,13 @@ namespace Collections{
                 return node;
             }
 
-            Node left = null;
+            BNode left = null;
             if (node.left != null){
                  left = countNode(node.left);
                  left.value++;
             }
 
-            Node right = null;
+            BNode right = null;
             if (node.right != null){
                 right = countNode(node.right);
                 right.value++;
@@ -48,12 +48,12 @@ namespace Collections{
         }
 
 
-        public static Node insert(Node node, int val){
-            Node root = node;
-            Node newNode = null;
+        public static BNode insert(BNode node, int val){
+            BNode root = node;
+            BNode newNode = null;
 
             if (node == null){
-                return new Node(val);
+                return new BNode(val);
             }
 
             if (val >= node.value){
