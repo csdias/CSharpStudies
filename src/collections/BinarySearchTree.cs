@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 //using System.Collections.Generic;
 
 namespace Collections{
@@ -12,11 +13,34 @@ namespace Collections{
     }
 
     public class BinarySearchTree{
-        static int count = 0;
-
         public static int getHeight(BNode root){
             var count = countNode(root);
             return count.value-1;
+        }
+
+    	public static void traverseOnlevelOrder(BNode root){
+
+            Queue<BNode> queue = new Queue<BNode>();
+
+            if(root != null)
+                queue.Enqueue(root);
+
+            while(queue.Count > 0){
+                var n = queue.Dequeue();
+                Console.Write(n.value + " ");
+                if (n.left != null)
+                    queue.Enqueue(n.left);
+                if (n.right != null)
+                    queue.Enqueue(n.right);
+            }            
+        }
+
+    	public static void traverseOnOrder(BNode root){
+            if(root != null){
+                traverseOnOrder(root.left);
+                Console.Write(root.value + " ");
+                traverseOnOrder(root.right);
+            }          
         }
 
         private static BNode countNode(BNode node){
