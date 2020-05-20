@@ -5,7 +5,7 @@ namespace Collections
     public partial class Program
     {
 
-        static void Main(string[] args){
+        static void Main_BST(string[] args){
             BNode root = null;
             root = BinarySearchTree.insert(root, 3);
             root = BinarySearchTree.insert(root, 5);
@@ -19,13 +19,20 @@ namespace Collections
             //var count = BinarySearchTree.getHeight(root);
         }
 
-        static void Main_LinkedList(string[] args){
+        static void Main(string[] args){
             LinkedList linkedList = new LinkedList();
             Node node = linkedList.Add(3);
-            linkedList.Add(5);
-            node = linkedList.Add(6);
-            linkedList.Add(9);
-            Console.WriteLine($"{linkedList}");
+            node = linkedList.Add(4);
+            node = linkedList.Add(2);
+            node = linkedList.Add(1);
+            node = linkedList.Add(5);
+            node = linkedList.Add(9);
+            node = linkedList.Add(7);
+            node = linkedList.Add(7);
+
+            var b = linkedList.RemoveDuplicates(linkedList.Head);
+
+            //Console.WriteLine($"{linkedList}");
 
             //linkedList.ReverseIteratively();
             //linkedList.ReverseRecursively();

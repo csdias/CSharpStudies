@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace Collections
 {
@@ -25,9 +26,15 @@ namespace Collections
                 }
                 n.Next = node;
                 count++;
-                return n;
+                return Head;
             }
         }
+
+
+
+
+
+
 
         public LinkedList ReverseIteratively()
         {
@@ -68,6 +75,26 @@ namespace Collections
 
             return reversedListHead;
         }
+
+        public Node RemoveDuplicates(Node node){
+            if(node == null || node.Next == null)
+                return node;
+
+            var root = node;
+
+            while(node?.Next != null){
+
+                while(node?.Value == node?.Next?.Value){
+                    node.Next = node.Next?.Next;
+                    count--;
+                }
+                
+                node = node?.Next;
+            }
+
+            return root;
+        }
+
     }
 
     public class Node
