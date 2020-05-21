@@ -30,12 +30,6 @@ namespace Collections
             }
         }
 
-
-
-
-
-
-
         public LinkedList ReverseIteratively()
         {
             Node current = this.Head;

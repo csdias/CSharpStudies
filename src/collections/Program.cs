@@ -21,20 +21,20 @@ namespace Collections
 
         static void Main(string[] args){
             LinkedList linkedList = new LinkedList();
-            Node node = linkedList.Add(3);
-            node = linkedList.Add(4);
-            node = linkedList.Add(2);
-            node = linkedList.Add(1);
+            Node node = linkedList.Add(2);
             node = linkedList.Add(5);
+            node = linkedList.Add(6);
             node = linkedList.Add(9);
-            node = linkedList.Add(7);
-            node = linkedList.Add(7);
+            //node = linkedList.Add(5);
+            //node = linkedList.Add(9);
+            //node = linkedList.Add(7);
+            //node = linkedList.Add(7);
 
-            var b = linkedList.RemoveDuplicates(linkedList.Head);
+            //var b = linkedList.RemoveDuplicates(linkedList.Head);
 
             //Console.WriteLine($"{linkedList}");
 
-            //linkedList.ReverseIteratively();
+            var n = linkedList.ReverseRecursively();
             //linkedList.ReverseRecursively();
         }
 
