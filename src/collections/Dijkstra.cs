@@ -19,17 +19,15 @@ namespace Collections
                (node: 4, value: int.MaxValue)
             };
 
-            //put the value to the first node to start going to itself
-            dists[0].value = 0;
+            //place manually the initial value in the priority list for a start
             priorityList.Add((0,0));
+
             while(CanContinue(dists)){
-                //get the closest node
-                var itemToProcess = GetNextNodeToProcess(priorityList, visiteds.ToArray());
-                visiteds.Add(itemToProcess.node);
-                //loop through the nodes attached to node to process
-                var newNodes = GetNextNeighboursNodesToProcess(nodes, itemToProcess.node);
+                var nextItemToProcess = GetNextNode(priorityList, visiteds.ToArray());
+                visiteds.Add(nextItemToProcess.node);
+                var newNodes = GetNeighbours(nodes, nextItemToProcess.node);
                 foreach(var item in newNodes){
-                    dists[item.nodeTarget].value = dists[itemToProcess.node].value + item.value;
+                    dists[item.nodeTarget].value = dists[nextItemToProcess.node].value + item.value;
                     priorityList.Add((item.nodeTarget,item.value));
                 }
             }
@@ -48,7 +46,7 @@ namespace Collections
             return canContinue;
         }
 
-        private List<(int nodeOrigin, int nodeTarget, int value)> GetNextNeighboursNodesToProcess((int nodeOrigin, int nodeTarget,
+        private List<(int nodeOrigin, int nodeTarget, int value)> GetNeighbours((int nodeOrigin, int nodeTarget,
          int value)[] nodes, int node){
              List<(int nodeOrigin, int nodeTarget, int value)> newNodes = new List<(int nodeOrigin, int nodeTarget, int value)>();   
             foreach(var item in nodes)
@@ -58,7 +56,7 @@ namespace Collections
             return newNodes;
         }
 
-        private (int node, int value) GetNextNodeToProcess(List<(int node, int value)> priorityList, int[] visiteds){
+        private (int node, int value) GetNextNode(List<(int node, int value)> priorityList, int[] visiteds){
             int nextNode = int.MaxValue;
             int shortestPath = int.MaxValue;
 
