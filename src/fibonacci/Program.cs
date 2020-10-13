@@ -8,13 +8,28 @@ namespace Fibonacci
         {
             //var p = GetNthFibonacci_Ite(7);
 
-            var p = GetNthFibonacci_Rec(5);
+            //var p = GetNthFibonacci_Rec(7);
 
+            //var p = CalculateFibonacci(5);
 
-            Console.WriteLine(p);
+            //var p = Fibonacci_Tuples(7);
+
+            var arr = mySort(new int[]{3,1,2,4,9,6});
+
+            //Console.WriteLine(p);
 
             Console.Read();
         }
+
+        public static int[] mySearch(int[] arr) {
+            int ini = 0;
+            int end = arr.Length;
+            int med = (end + ini) / 2;
+
+
+            return arr;
+        }
+
 
         public static int CalculateFibonacci(int p) 
         {
