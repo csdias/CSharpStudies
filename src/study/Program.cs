@@ -4,8 +4,19 @@ namespace study
 {
     public static partial class Study
     {
-        //FindNemo
+
+        //Make Change 
         static void Main(string[] args)
+        {
+            int[] coins = {1,2,5};
+            int amount = 11;
+
+            var result = Study.CoinChange(coins, amount);
+
+
+        }
+        //FindNemo
+        static void Main_FindNemo(string[] args)
         {
             int[] arr = {1,2,3,4,5,6,7,8,9,11,12,13,14,15,16,21};
             //int[] arr = {100,200,1100,1200,2000,2100};

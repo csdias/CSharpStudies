@@ -139,61 +139,61 @@ namespace Study
                 return true;
         }
 
-        private static Node countNode(Node node)
-        {
+        //private static Node countNode(Node node)
+        //{
+//
+            //if (node.left == null && node.right == null)
+        //     {
+        //         node.value = 1;
+        //         return node;
+        //     }
 
-            if (node.left == null && node.right == null)
-            {
-                node.value = 1;
-                return node;
-            }
+        //     Node left = null;
+        //     if (node.left != null)
+        //     {
+        //         left = countNode(node.left);
+        //         left.value++;
+        //     }
 
-            Node left = null;
-            if (node.left != null)
-            {
-                left = countNode(node.left);
-                left.value++;
-            }
+        //     Node right = null;
+        //     if (node.right != null)
+        //     {
+        //         right = countNode(node.right);
+        //         right.value++;
+        //     }
 
-            Node right = null;
-            if (node.right != null)
-            {
-                right = countNode(node.right);
-                right.value++;
-            }
+        //     int countLeft = left?.value == null ? 0 : left.value;
+        //     int countRight = right?.value == null ? 0 : right.value;
 
-            int countLeft = left?.value == null ? 0 : left.value;
-            int countRight = right?.value == null ? 0 : right.value;
+        //     node.value = countLeft >= countRight ? countLeft : countRight;
 
-            node.value = countLeft >= countRight ? countLeft : countRight;
-
-            return node;
-        }
+        //     return node;
+        // }
 
 
-        public static Node insert(Node node, int val)
-        {
-            Node root = node;
-            Node newNode = null;
+        // public static Node insert(Node node, int val)
+        // {
+        //     Node root = node;
+        //     Node newNode = null;
 
-            if (node == null)
-            {
-                return new Node(val);
-            }
+        //     if (node == null)
+        //     {
+        //         return new Node(val);
+        //     }
 
-            if (val >= node.value)
-            {
-                newNode = insert(node.right, val);
-                node.right = newNode;
-            }
-            else
-            {
-                newNode = insert(node.left, val);
-                node.left = newNode;
-            }
+        //     if (val >= node.value)
+        //     {
+        //         newNode = insert(node.right, val);
+        //         node.right = newNode;
+        //     }
+        //     else
+        //     {
+        //         newNode = insert(node.left, val);
+        //         node.left = newNode;
+        //     }
 
-            return root;
-        }
+        //     return root;
+        // }
 
     }
 
